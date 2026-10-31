@@ -12,7 +12,7 @@ elif [ -f "$XRK_ROOT/shell_modules/bootstrap.sh" ]; then
 else
     tmp=$(mktemp "${TMPDIR:-/tmp}/xrk-bootstrap.XXXXXX") || exit 1
     curl -fsSL --connect-timeout 10 --max-time 30 \
-        "https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/shell_modules/bootstrap.sh" \
+        "https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/shell_modules/bootstrap.sh" \
         -o "$tmp" || { rm -f "$tmp"; echo "bootstrap 下载失败"; exit 1; }
     source "$tmp"
     rm -f "$tmp"

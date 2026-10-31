@@ -6,7 +6,7 @@ if [ -f "$XRK_ROOT/shell_modules/xrk_base.sh" ]; then
     source "$XRK_ROOT/shell_modules/xrk_base.sh"
     _xrk_ensure_bootstrap
 else
-    source <(curl -sL "https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/shell_modules/bootstrap.sh")
+    source <(curl -sL "https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/shell_modules/bootstrap.sh")
 fi
 xrk_bootstrap "${1:-}" 0
 export SCRIPT_RAW_BASE SCRIPT_CLONE_URL

@@ -4,7 +4,7 @@
 # 主流程依赖：克隆脚本/葵崽(XRK-Yunzai)、检测、安装 Node/pnpm、Redis、菜单
 [ -f /xrk/shell_modules/xrk_config.sh ] 2>/dev/null && source /xrk/shell_modules/xrk_config.sh
 XRK_ROOT="${XRK_ROOT:-/xrk}"
-SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}}"
+SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}}"
 [ -z "$SCRIPT_CLONE_URL" ] && type get_clone_from_raw &>/dev/null && SCRIPT_CLONE_URL="$(get_clone_from_raw "$SCRIPT_RAW_BASE")"
 [ -z "$SCRIPT_CLONE_URL" ] && SCRIPT_CLONE_URL="${_XRK_DEFAULT_CLONE:-https://gitee.com/xrkseek/xrk-projects-scripts.git}"
 export SCRIPT_RAW_BASE SCRIPT_CLONE_URL XRK_ROOT
@@ -103,7 +103,7 @@ export SCRIPT_RAW_BASE SCRIPT_CLONE_URL XRK_ROOT
             if type xrk_repo_sync &>/dev/null; then
                 xrk_repo_sync
             else
-                (cd "$XRK_ROOT" && git fetch origin && git reset --hard origin/master)
+                (cd "$XRK_ROOT" && git fetch origin && git reset --hard "origin/${branch:-main}")
             fi
         fi
     else

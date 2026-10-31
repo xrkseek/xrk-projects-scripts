@@ -5,7 +5,7 @@
 [ -f "${XRK_ROOT:-/xrk}/shell_modules/xrk_config.sh" ] && source "${XRK_ROOT:-/xrk}/shell_modules/xrk_config.sh"
 XRK_ROOT="${XRK_ROOT:-/xrk}"
 XRK_BIN="${XRK_BIN:-/usr/local/bin}"
-_XRK_BASE_DEFAULT_RAW="${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}"
+_XRK_BASE_DEFAULT_RAW="${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}"
 
 # 确保 bootstrap 已加载（load_module / xrk_bootstrap / log_*）
 _xrk_ensure_bootstrap() {

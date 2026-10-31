@@ -4,7 +4,7 @@
 cd "$HOME" || exit
 
 XRK_ROOT="${XRK_ROOT:-/xrk}"
-SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}"
+SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}"
 if [ -f "${XRK_ROOT}/shell_modules/software_head.sh" ]; then
     # shellcheck source=/dev/null
     source "${XRK_ROOT}/shell_modules/software_head.sh"

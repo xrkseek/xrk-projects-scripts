@@ -5,7 +5,7 @@
 
 XRK_ROOT="${XRK_ROOT:-/xrk}"
 XRK_BIN="${XRK_BIN:-/usr/local/bin}"
-_XRK_DEFAULT_RAW_BASE="https://gitee.com/xrkseek/xrk-projects-scripts/raw/master"
+_XRK_DEFAULT_RAW_BASE="https://gitee.com/xrkseek/xrk-projects-scripts/raw/main"
 _XRK_DEFAULT_CLONE="https://gitee.com/xrkseek/xrk-projects-scripts.git"
 
 # 葵崽 XRK-Yunzai（三仓库）

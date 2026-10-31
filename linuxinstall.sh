@@ -4,7 +4,7 @@
 # 主流程入口：按 detect_os 分发到各发行版安装脚本，支持全 Linux + 多架构
 
 XRK_ROOT="${XRK_ROOT:-/xrk}"
-SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}"
+SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}"
 if [ -f "$XRK_ROOT/shell_modules/xrk_base.sh" ]; then
     # shellcheck source=/dev/null
     source "$XRK_ROOT/shell_modules/xrk_base.sh"

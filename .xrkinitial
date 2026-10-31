@@ -55,7 +55,7 @@ fi
 # 3. bootstrap + common
 # shellcheck source=/dev/null
 [ -f /xrk/shell_modules/bootstrap.sh ] && source /xrk/shell_modules/bootstrap.sh \
-    || source <(curl -sL "https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/shell_modules/bootstrap.sh")
+    || source <(curl -sL "https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/shell_modules/bootstrap.sh")
 xrk_bootstrap "${XRK_SOURCE:-}"
 # shellcheck source=/dev/null
 source <(curl -sL "$SCRIPT_RAW_BASE/shell_modules/common.sh")

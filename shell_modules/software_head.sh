@@ -1,7 +1,7 @@
 #!/bin/bash
 # 软件安装脚本标准头部
 
-SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}}"
+SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}}"
 # shellcheck source=/dev/null
 if [ -f "${XRK_ROOT:-/xrk}/shell_modules/xrk_base.sh" ]; then
     source "${XRK_ROOT:-/xrk}/shell_modules/xrk_base.sh"

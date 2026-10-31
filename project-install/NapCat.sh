@@ -1,6 +1,6 @@
 #!/bin/bash
 # NapCat 安装（Linux QQ + Shell 注入，不含 CLI；启动用 nt）
-SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}"
+SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}"
 _script_dir="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" 2>/dev/null && pwd || echo .)"
 for _bootstrap in "/xrk/shell_modules/install_script_common.sh" "${_script_dir}/../shell_modules/install_script_common.sh"; do
     if [ -f "$_bootstrap" ]; then

@@ -38,7 +38,7 @@ load_install_module() {
             # shellcheck source=/dev/null
             source "$root/shell_modules/bootstrap.sh"
         else
-            base_url="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}}"
+            base_url="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}}"
             # shellcheck source=/dev/null
             source <(curl -sL --connect-timeout 5 --max-time 30 "${base_url}/shell_modules/bootstrap.sh" 2>/dev/null) || true
         fi
@@ -52,7 +52,7 @@ load_install_module() {
     [ -f "$root/$path" ] && { source "$root/$path"; return 0; }
     base="$(_脚本仓库根)"
     [ -n "$base" ] && [ -f "${base}/$path" ] && { source "${base}/$path"; return 0; }
-    base_url="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}}"
+    base_url="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}}"
     # shellcheck source=/dev/null
     source <(curl -sL --connect-timeout 5 --max-time 30 "${base_url}/$path" 2>/dev/null) && return 0
     return 1
@@ -68,7 +68,7 @@ init_install_env() {
         xrk_bootstrap "$source_arg" "$force"
     else
         type init_repo_source &>/dev/null && init_repo_source "$source_arg" "$force"
-        SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}"
+        SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}"
         export SCRIPT_RAW_BASE
     fi
 

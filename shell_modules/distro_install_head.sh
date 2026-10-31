@@ -2,7 +2,7 @@
 # 各发行版安装脚本公共头部（project-install/Yunzai/*）
 
 root="${XRK_ROOT:-/xrk}"
-SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}}"
+SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}}"
 # shellcheck source=/dev/null
 if [ -f "$root/shell_modules/xrk_base.sh" ]; then
     source "$root/shell_modules/xrk_base.sh"

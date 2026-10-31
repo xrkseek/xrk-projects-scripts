@@ -382,7 +382,7 @@ run_software() {
         else
             # shellcheck source=/dev/null
             [ -f "${XRK_ROOT:-/xrk}/shell_modules/common.sh" ] && source "${XRK_ROOT:-/xrk}/shell_modules/common.sh" \
-                || source <(curl -sL "${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}/shell_modules/common.sh")
+                || source <(curl -sL "${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}/shell_modules/common.sh")
         fi
     fi
     xrk_run_script "$@"

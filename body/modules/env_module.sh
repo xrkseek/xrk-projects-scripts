@@ -7,5 +7,5 @@ if [ -f "$XRK_ROOT/shell_modules/env_menu.sh" ]; then
 fi
 # shellcheck source=/dev/null
 [ -f "$XRK_ROOT/shell_modules/menu_boot.sh" ] && source "$XRK_ROOT/shell_modules/menu_boot.sh" \
-    || source <(curl -sL "${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}/shell_modules/bootstrap.sh")
+    || source <(curl -sL "${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}/shell_modules/bootstrap.sh")
 xrk_exec_script "shell_modules/env_menu.sh"

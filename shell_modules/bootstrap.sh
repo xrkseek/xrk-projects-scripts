@@ -2,7 +2,7 @@
 # 引导：源推导、init_repo_source、load_module、load_distro_deps、log_*
 
 [ -f "${XRK_ROOT:-/xrk}/shell_modules/xrk_config.sh" ] && source "${XRK_ROOT:-/xrk}/shell_modules/xrk_config.sh"
-_XRK_DEFAULT_BASE="${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}"
+_XRK_DEFAULT_BASE="${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}"
 XRK_DETECT_METHOD=""
 
 _detect_system_timezone() {
@@ -92,7 +92,7 @@ get_base_from_arg() {
     case "${arg#-}" in
         1) echo "https://raw.gitcode.com/Xrkseek/xrk-projects-scripts/raw/main" ;;
         2) echo "https://raw.githubusercontent.com/sunflowermm/xrk-projects-scripts/main" ;;
-        3|*) echo "${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}" ;;
+        3|*) echo "${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}" ;;
     esac
 }
 
@@ -228,7 +228,7 @@ xrk_bootstrap() {
             case "${source_arg#-}" in
                 1) boot_base="https://raw.gitcode.com/Xrkseek/xrk-projects-scripts/raw/main" ;;
                 2) boot_base="https://raw.githubusercontent.com/sunflowermm/xrk-projects-scripts/main" ;;
-                3|*) boot_base="${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}" ;;
+                3|*) boot_base="${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}" ;;
             esac
             source <(curl -sL "${boot_base}/shell_modules/bootstrap.sh")
         fi

@@ -7,7 +7,7 @@ if [ -f "$root/shell_modules/bootstrap.sh" ]; then
     # shellcheck source=/dev/null
     source "$root/shell_modules/bootstrap.sh"
 else
-    base="${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}"
+    base="${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}"
     tmp=$(mktemp "${TMPDIR:-/tmp}/xrk-bootstrap.XXXXXX") || exit 1
     curl -fsSL --connect-timeout 10 --max-time 30 "${base}/shell_modules/bootstrap.sh" -o "$tmp" || {
         rm -f "$tmp"

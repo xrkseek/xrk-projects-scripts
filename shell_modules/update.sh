@@ -15,7 +15,8 @@ xrk_repo_sync() {
     }
 
     branch=$(git symbolic-ref -q --short HEAD 2>/dev/null || true)
-    [ -n "$branch" ] || branch=master
+    [ -n "$branch" ] || branch=$(git symbolic-ref -q --short refs/remotes/origin/HEAD 2>/dev/null | sed 's|^origin/||')
+    [ -n "$branch" ] || branch=main
 
     if ! git diff --quiet 2>/dev/null || ! git diff --cached --quiet 2>/dev/null; then
         n_dirty=$(git status -s | wc -l)

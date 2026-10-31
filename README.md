@@ -36,7 +36,7 @@
 
 **Gitee（默认推荐）：**
 ```bash
-bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/install.sh)
+bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/install.sh)
 ```
 
 **GitCode（备用）：**
@@ -103,7 +103,7 @@ style K fill:#98FB98
 
 ```bash
 # Gitee（默认推荐）
-bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/install.sh)
+bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/install.sh)
 
 # GitCode（备用）
 bash <(curl -sL https://raw.gitcode.com/Xrkseek/xrk-projects-scripts/raw/main/install.sh)
@@ -122,7 +122,7 @@ bash <(curl -sL https://raw.githubusercontent.com/sunflowermm/xrk-projects-scrip
 
 ```bash
 # Gitee（默认推荐）
-bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/ssh.sh)
+bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/ssh.sh)
 
 # GitCode（备用）
 bash <(curl -sL https://raw.gitcode.com/Xrkseek/xrk-projects-scripts/raw/main/ssh.sh)
@@ -138,7 +138,7 @@ bash <(curl -sL https://raw.githubusercontent.com/sunflowermm/xrk-projects-scrip
 #### Node.js
 ```bash
 # Gitee（默认推荐）
-bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/project-install/software/node)
+bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/project-install/software/node)
 
 # GitCode（备用）
 bash <(curl -sL https://raw.gitcode.com/Xrkseek/xrk-projects-scripts/raw/main/project-install/software/node)
@@ -150,7 +150,7 @@ bash <(curl -sL https://raw.githubusercontent.com/sunflowermm/xrk-projects-scrip
 #### pnpm
 ```bash
 # Gitee（默认推荐）
-bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/project-install/software/pnpm)
+bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/project-install/software/pnpm)
 
 # GitCode（备用）
 bash <(curl -sL https://raw.gitcode.com/Xrkseek/xrk-projects-scripts/raw/main/project-install/software/pnpm)
@@ -162,7 +162,7 @@ bash <(curl -sL https://raw.githubusercontent.com/sunflowermm/xrk-projects-scrip
 #### Chromium
 ```bash
 # Gitee（默认推荐）
-bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/project-install/software/chromium)
+bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/project-install/software/chromium)
 
 # GitCode（备用）
 bash <(curl -sL https://raw.gitcode.com/Xrkseek/xrk-projects-scripts/raw/main/project-install/software/chromium)
@@ -174,7 +174,7 @@ bash <(curl -sL https://raw.githubusercontent.com/sunflowermm/xrk-projects-scrip
 #### FFmpeg
 ```bash
 # Gitee（默认推荐）
-bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/project-install/software/ffmpeg)
+bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/project-install/software/ffmpeg)
 
 # GitCode（备用）
 bash <(curl -sL https://raw.gitcode.com/Xrkseek/xrk-projects-scripts/raw/main/project-install/software/ffmpeg)
@@ -186,7 +186,7 @@ bash <(curl -sL https://raw.githubusercontent.com/sunflowermm/xrk-projects-scrip
 #### yq
 ```bash
 # Gitee（默认推荐）
-bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/project-install/software/yq)
+bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/project-install/software/yq)
 
 # GitCode（备用）
 bash <(curl -sL https://raw.gitcode.com/Xrkseek/xrk-projects-scripts/raw/main/project-install/software/yq)
@@ -202,7 +202,7 @@ bash <(curl -sL https://raw.githubusercontent.com/sunflowermm/xrk-projects-scrip
 #### Python + uv
 ```bash
 # Gitee（默认推荐）
-bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/body/modules/python_uv.sh)
+bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/body/modules/python_uv.sh)
 
 # GitCode（备用）
 bash <(curl -sL https://raw.gitcode.com/Xrkseek/xrk-projects-scripts/raw/main/body/modules/python_uv.sh)
@@ -214,7 +214,7 @@ bash <(curl -sL https://raw.githubusercontent.com/sunflowermm/xrk-projects-scrip
 #### FFmpeg 模块
 ```bash
 # Gitee（默认推荐）
-bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/body/modules/ffmpeg.sh)
+bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/body/modules/ffmpeg.sh)
 
 # GitCode（备用）
 bash <(curl -sL https://raw.gitcode.com/Xrkseek/xrk-projects-scripts/raw/main/body/modules/ffmpeg.sh)
@@ -230,7 +230,7 @@ bash <(curl -sL https://raw.githubusercontent.com/sunflowermm/xrk-projects-scrip
 #### Linux 容器安装
 ```bash
 # Gitee（默认推荐，Ubuntu 示例）
-bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/Termux-container/xrk.sh) --ubuntu
+bash <(curl -sL https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/Termux-container/xrk.sh) --ubuntu
 
 # GitCode（备用，Ubuntu 示例）
 bash <(curl -sL https://raw.gitcode.com/Xrkseek/xrk-projects-scripts/raw/main/Termux-container/xrk.sh) --ubuntu

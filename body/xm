@@ -13,7 +13,7 @@ _xm_init() {
     else
         [ -f "$HOME/.xrk_repo" ] && source "$HOME/.xrk_repo"
         # shellcheck source=/dev/null
-        source <(curl -sL "${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}/shell_modules/bootstrap.sh")
+        source <(curl -sL "${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}/shell_modules/bootstrap.sh")
         xrk_ensure_bootstrap
         xrk_load_xm
     fi
@@ -82,7 +82,7 @@ while true; do
             if type xrk_exec_script &>/dev/null; then
                 xrk_exec_script "shell_modules/env_menu.sh"
             else
-                bash <(curl -sL "${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}/shell_modules/env_menu.sh")
+                bash <(curl -sL "${SCRIPT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}/shell_modules/env_menu.sh")
             fi
             ;;
         4)

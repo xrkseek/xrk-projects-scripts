@@ -1,6 +1,6 @@
 #!/bin/bash
 # 公共模块：detect_arch/platform/os、install_pkg、ensure_cmd、换源（Termux 见 Termux.sh）
-SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}}"
+SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}}"
 
 detect_arch() {
     local m; m=$(uname -m)
@@ -186,7 +186,7 @@ ensure_curl() {
 xrk_source_common() {
     type detect_os &>/dev/null && return 0
     local root="${XRK_ROOT:-/xrk}"
-    SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}}"
+    SCRIPT_RAW_BASE="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}}"
     export SCRIPT_RAW_BASE
     if type load_module &>/dev/null; then
         load_module "shell_modules/common.sh" && return 0
@@ -344,7 +344,7 @@ load_install_deps() {
         load_module "shell_modules/github.sh"
         return 0
     fi
-    local base="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}}"
+    local base="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}}"
     [ -f "$root/shell_modules/versions.sh" ] && source "$root/shell_modules/versions.sh" \
         || source <(curl -sL "$base/shell_modules/versions.sh")
     [ -f "$root/shell_modules/github.sh" ] && source "$root/shell_modules/github.sh" \
@@ -373,7 +373,7 @@ _xrk_script_repo_root() {
 xrk_run_script() {
     local path="$1"
     shift
-    local args=("$@") base="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/master}}"
+    local args=("$@") base="${SCRIPT_RAW_BASE:-${_XRK_DEFAULT_RAW_BASE:-https://gitee.com/xrkseek/xrk-projects-scripts/raw/main}}"
     local retry=0 max_retries=3 repo_root
 
     repo_root=$(_xrk_script_repo_root 2>/dev/null) || repo_root=""

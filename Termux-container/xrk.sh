@@ -34,7 +34,7 @@ _termux_ensure_deps() {
 _termux_ensure_deps
 
 # 首次引导
-source <(curl -sL "https://gitee.com/xrkseek/xrk-projects-scripts/raw/master/shell_modules/bootstrap.sh")
+source <(curl -sL "https://gitee.com/xrkseek/xrk-projects-scripts/raw/main/shell_modules/bootstrap.sh")
 xrk_bootstrap "$XRK_SOURCE" 1
 source <(curl -sL "$SCRIPT_RAW_BASE/shell_modules/Termux.sh")
 
