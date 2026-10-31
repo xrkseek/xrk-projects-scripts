@@ -246,10 +246,6 @@ EOM
         || wget --tries=3 --timeout=30 --show-progress -O "$INSTALL_DIR/root/.xrkinitial" "$INITIAL_SCRIPT_URL" 2>/dev/null) \
         || warn ".xrkinitial 下载失败（可进入容器后手动重试）"
     info "配置一次性启动脚本..."
-    # 已装过的老容器可能残留 /root/.xrk 普通文件（阻塞 XRK-Harness），此处就地让位
-    [ -f "$INSTALL_DIR/root/.xrk" ] && [ ! -d "$INSTALL_DIR/root/.xrk" ] \
-        && [ ! -e "$INSTALL_DIR/root/.xrkinitial" ] \
-        && mv -f "$INSTALL_DIR/root/.xrk" "$INSTALL_DIR/root/.xrkinitial"
     printf 'XRK_SOURCE="%s"\n' "$XRK_SOURCE" > "$INSTALL_DIR/root/.xrk_env"
     # 生成一次性 profile 脚本（使用 POSIX 兼容写法，避免 Alpine /bin/sh 报 bad substitution）
     # 统一 1.sh（bash 已在 install_system 预装）
@@ -259,9 +255,6 @@ rm -f /etc/profile.d/1.sh
 export LANG=zh_CN.UTF-8
 locale-gen 2>/dev/null || true
 update-locale LANG=zh_CN.UTF-8 2>/dev/null || true
-# 自愈：旧版安装把初始化脚本落在 /root/.xrk，与 XRK-Harness 产品目录撞名。
-# 若 .xrk 是普通文件（非目录），挪到 .xrkinitial，不许阻塞 Harness 建目录。
-[ -f /root/.xrk ] && [ ! -d /root/.xrk ] && mv -f /root/.xrk /root/.xrkinitial
 [ -f /root/.xrkinitial ] && bash /root/.xrkinitial
 EOM
 
