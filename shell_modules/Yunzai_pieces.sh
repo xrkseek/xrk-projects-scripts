@@ -103,7 +103,7 @@ export SCRIPT_RAW_BASE SCRIPT_CLONE_URL XRK_ROOT
             if type xrk_repo_sync &>/dev/null; then
                 xrk_repo_sync
             else
-                (cd "$XRK_ROOT" && git fetch origin && git reset --hard "origin/${branch:-main}")
+                (cd "$XRK_ROOT" && git fetch origin && git reset --hard origin/main)
             fi
         fi
     else
