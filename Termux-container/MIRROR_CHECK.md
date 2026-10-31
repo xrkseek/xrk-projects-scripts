@@ -34,7 +34,7 @@
 | **PATH** | +/usr/games:/usr/local/games (Debian) | 无 games | 标准 PATH |
 | **locale** | locale-gen + update-locale | 仅 export LANG | locale-gen（部分有） |
 | **bash** | 默认有 | 需 apk add bash | 默认有 |
-| **profile.d 脚本** | locale-gen; bash .xrk | export LANG; bash/sh .xrk | 同 Debian |
+| **profile.d 脚本** | locale-gen; bash /root/.xrkinitial | export LANG; bash/sh /root/.xrkinitial | 同 Debian |
 | **locale.conf** | /etc/locale.conf | 同左 + profile.d/locale.sh | 同 Debian |
 
 ---
